@@ -1,0 +1,155 @@
+@keyframes pisca{ /*animação de piscar*/
+    0% {opacity: 0.2;} 
+    50% {opacity: 1;}
+    100% {opacity: 0,2;}
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.urna { /*urna completa*/
+
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela{ /*telinha principal*/
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado{ /*teclado numerico*/
+    background-color: #403A3A;
+    margin-left: 30px;
+}
+.teclado--linha{ /*linhas de 3 em 3 do teclado*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.teclado_botao{
+    width: 70px; /* tamanho do botao*/
+    height: 40px; /*largura do botao*/
+    background-color: #000; /*cor de fundo do botao*/
+    color: #fff; /*cor dos numeros do botao*/
+    font-size:25px; /*tamanho da fonte */
+    display: flex; /* display flex*/
+    align-items: center; /*alinha item*/
+    justify-content: center; /*centraliza*/
+    margin: 10px; /*margem*/
+    cursor: pointer; /*para ser clicavel */
+    box-shadow: 3px 3px 0px #555; /* efeito de sombra */
+
+}
+.botao_branco{
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+.botao_corrige{
+    background-color:#F09046;
+    color:#000;
+    font-size: 15px;
+}
+.botao_confirma{
+    background-color: #48C079;
+    color:#000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.d-1{ /*tela principal*/
+flex: 1;
+display: flex;
+}
+.d-1-left{ /*tela da esquerda com os nomes*/
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.d-1-1{ /*texto main*/
+ height: 50px;
+ display: flex;
+ align-items: center;
+} 
+.d-1-2{ /*texto cargo*/
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3{ /*quadrado do numero*/
+ height: 50px;
+}
+.numero{ /*config do quadrado*/
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center; /* alinhando center*/
+    line-height: 40px; /*tamanho da linha */
+    font-size:25px;
+
+}
+.pisca{ /*animação de piscar o quadrado do numero*/
+    animation-name: pisca;
+    animation-duration: 1s; /*duração*/
+    animation-iteration-count: infinite; /*infinito*/
+}
+.d-1-4{ /*nome / partido / vice*/
+ flex:1;
+ line-height: 30px;
+}
+.d-1-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90px; /*tamanho do espaco das img */
+}
+.d-1-image{ /*espaço das imagens*/
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+
+}
+.d-1-image img{ /*tamanho das imagens*/
+    width: 80%;
+}
+.d-1-image.small{ /*tamanho especifico da 2 imagem na class small*/
+    width: 80%;
+    font-size: 12px;
+}
+.d-2{ /*tela de rodapé*/
+ height: 50px; /*tamanho do rodapé*/
+ font-size: 14px; /*tamanho fonte*/
+ border-top: 2px solid #000; /*borda no topo*/
+ padding-left: 10px; /*espaço na esquerda*/
+}
+
+.avisa--grande{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.avisa--gigante {
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
